@@ -75,3 +75,10 @@ For more information on configuring the application, see [Laravel documentation]
 - Seed the database with built-in game information: `php artisan db:seed`
 - Run the project locally: `php artisan serve`
   - This will spin up a server on port 8000. The port number can be changed in the .env file.
+#### Contributors
+
+- Yden Da
+- Noah Cantrell
+- Joseph Hoffmann
+- Ryan Banks
+- Matthew Renze
