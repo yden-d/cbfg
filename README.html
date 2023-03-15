@@ -1,0 +1,52 @@
+<h1 id="class-based-fighter-game">Class-based fighter game</h1>
+<h2 id="description">Description</h2>
+<p>This is a 2D Unity game that combines the combat of fighter platformers with the skill tree and customizable loadout of an RPG.</p>
+<h2 id="important-links">Important links</h2>
+<ul>
+<li><a href="https://git.las.iastate.edu/SeniorDesignComS/2022fall/class-based-fighter-game">Gitlab</a></li>
+<li><a href="https://drive.google.com/drive/folders/1X5-LN5zrB9eLN_YNaz4BDINnO8pxLjnl?usp=sharing">Design Documents</a></li>
+</ul>
+<h2 id="setup">Setup</h2>
+<p>To run the project, you will need to build the client application, build the server application, and set up the API.</p>
+<h3 id="building-the-game">Building the game</h3>
+<ul>
+<li><p>Open the Class-Based-Fighting-Directory in the Unity Hub. See Unity’s <a href="https://unity.com/download">official site</a> for information on installing the Hub. <em>Note: This project currently requires Unity version 2021.3.9f1.</em></p></li>
+<li><p>Build and run the game (File &gt; Build and run). This creates an executable at Class-Based-Fighting-Game/Builds/CBFG_0.0.0/</p></li>
+</ul>
+<h3 id="running-the-server">Running the server</h3>
+<ul>
+<li><p>Ensure <a href="https://git.las.iastate.edu/SeniorDesignComS/2022fall/class-based-fighter-game/-/blob/readme/README.html">.NET</a> is installed on your machine.</p></li>
+<li><p>To run the game server locally, execute <code>dotnet run</code> from the server directory. This spins up a server on port 585. <em>Note: this requires dotnet version &gt;= 6.0.</em></p></li>
+</ul>
+<h3 id="backend-setup">Backend setup</h3>
+<p>Your machine will need</p>
+<ul>
+<li>PHP version &gt;= 8</li>
+<li><a href="https://getcomposer.org/">Composer</a></li>
+<li>An SQL server (for example, <a href="https://dev.mysql.com/downloads/mysql/">MySQL</a>)</li>
+</ul>
+<h4 id="setting-up-the-database">Setting up the database</h4>
+<p>The project comes with built-in support for MySQL, SQLite, and Microsoft SQL Server. The examples show here use MySQL. For information on other databases, see the <a href="https://laravel.com/docs/9.x/database#configuration">Laravel documentation</a>.</p>
+<p>Create the database and credentials the API will use. For example, using a MySQL database:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">CREATE</span> <span class="kw">DATABASE</span> classbasedfightergamedb;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="kw">CREATE</span> <span class="fu">USER</span> classbasedfightergameuser <span class="kw">IDENTIFIED</span> <span class="kw">BY</span> <span class="st">&#39;classbasedfightergamepw&#39;</span>;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="kw">GRANT</span> <span class="kw">ALL</span> <span class="kw">PRIVILEGES</span> <span class="kw">ON</span> classbasedfightergamedb.<span class="op">*</span> <span class="kw">to</span> <span class="st">&#39;classbasedfightergameuser&#39;</span>@<span class="st">&#39;%&#39;</span>;</span></code></pre></div>
+<h4 id="configuring-the-application">Configuring the application</h4>
+<p>From the api directory, copy .env.example to a new file .env. Replace the database credentials in .env with your credentials. For example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="va">DB_CONNECTION=</span>mysql</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="va">DB_HOST=</span>127.0.0.1</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="va">DB_PORT=</span>3306</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="va">DB_DATABASE=</span>classbasedfightergamedb</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a><span class="va">DB_USERNAME=</span>classbasedfightergameuser</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="va">DB_PASSWORD=</span>classbasedfightergamepw</span></code></pre></div>
+<p>For more information on configuring the application, see <a href="https://laravel.com/docs/9.x/configuration">Laravel documentation</a></p>
+<h4 id="final-steps">Final steps</h4>
+<ul>
+<li>Install project dependencies: <code>composer install</code></li>
+<li>Create project tables: <code>php artisan migrate</code></li>
+<li>Seed the database with built-in game information: <code>php artisan db:seed</code></li>
+<li>Run the project locally: <code>php artisan serve</code>
+<ul>
+<li>This will spin up a server on port 8000. The port number can be changed in the .env file.</li>
+</ul></li>
+</ul>

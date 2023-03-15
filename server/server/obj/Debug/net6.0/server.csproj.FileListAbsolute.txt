@@ -1,0 +1,15 @@
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\bin\Debug\net6.0\server.exe
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\bin\Debug\net6.0\server.deps.json
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\bin\Debug\net6.0\server.runtimeconfig.json
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\bin\Debug\net6.0\server.dll
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\bin\Debug\net6.0\server.pdb
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.csproj.AssemblyReference.cache
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.AssemblyInfoInputs.cache
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.AssemblyInfo.cs
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.csproj.CoreCompileInputs.cache
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.dll
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\refint\server.dll
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.pdb
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\server.genruntimeconfig.cache
+C:\Users\jclou\.402PROJ\class-based-fighter-game\server\server\obj\Debug\net6.0\ref\server.dll
